@@ -1,0 +1,7 @@
+ModuleCmd_Load.c(200):ERROR:105: Unable to locate a modulefile for 'vim-8.0'
++ cd /home/fs02/pmr82_0001/bct52/shared_distributed_parallelization
++ export TASKS_PER_NODE=2
++ TASKS_PER_NODE=2
++ uniq /var/spool/torque/aux//461255.thecube.cac.cornell.edu
++ awk -v TASKS_PER_NODE=2 '{for(i=0;i<TASKS_PER_NODE;i+=1) print}'
++ mpiexec --hostfile nodefile -n 4 -x OMP_NUM_THREADS ./Hybrid
